@@ -1,14 +1,14 @@
 import { Flash } from '@primer/react'
 
-import { useTranslation } from 'components/hooks/useTranslation'
-import type { SearchValidationErrorT } from './types'
+import { useTranslation } from 'src/languages/components/useTranslation'
+import type { SearchValidationErrorEntry } from '../types'
 
 interface Props {
-  errors: SearchValidationErrorT[]
+  errors: SearchValidationErrorEntry[]
 }
 
 export function ValidationErrors({ errors }: Props) {
-  const { t } = useTranslation('search')
+  const { t } = useTranslation('search_results')
 
   return (
     <div>
